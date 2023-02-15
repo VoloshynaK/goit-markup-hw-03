@@ -1,0 +1,204 @@
+:root {
+    --primary-title-color: #2E2F42;
+    --primary-text-color: #434455;
+    --accent-color: #4D5AE5;
+    --accent-focus-color:#404BBF;
+    --section-bckg-color: #F4F4FD;
+    --filter-bckg-color: #E7E9FC;
+    --primary-bckg-white-color: #FFFFFF;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    background-color: var(--primary-bckg-white-color);
+    color: var(--primary-title-color);
+}
+
+
+/* header */
+.logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-title-color);
+    cursor: pointer;
+}
+.logo-footer{
+    color: var(--section-bckg-color);
+}
+.logo-accent {
+    color: var(--accent-color);
+}
+.list {
+    list-style-type: none;
+}
+
+.site-nav .link {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.site-nav .link.current {
+    color: var(--accent-focus-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link:active {
+    color: var(--accent-focus-color);
+}
+.address .link {
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.address .link:hover,
+.address .link:focus,
+.address .link:active {
+    color: var(--accent-focus-color);
+}
+
+
+/* hero */
+.hero {
+    background-color: var(--primary-title-color);
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--primary-bckg-white-color);
+}
+.hero-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    letter-spacing: 0.04em;
+    color: var(--primary-bckg-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--accent-focus-color);
+}
+
+
+/* sections */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-title-color);
+}
+.advantage-list {
+    text-align: left;
+}
+.advantage-title,
+.team-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-title-color);
+}
+.advantage-descr,
+.team-descr {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+.team-list {
+    text-align: center;
+}
+.section.team {
+    background-color: var(--section-bckg-color);
+}
+
+
+/* footer */
+.footer{
+    text-align: left;
+    background-color: var(--primary-title-color);
+}
+.footer-descr {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--filter-bckg-color);
+}
+
+
+/* portfolio page */
+
+.filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--accent-color);
+    background-color: var(--section-bckg-color);
+    cursor: pointer;
+}
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn:active {
+    color: var(--primary-bckg-white-color);
+    background-color: var(--accent-focus-color);
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-title-color);
+}
+.card-descr {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
