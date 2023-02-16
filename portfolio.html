@@ -11,121 +11,144 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
-      <nav>
-        <a href="./index.html" class="logo">
-          <span class="logo-accent">Web</span>Studio
-        </a>
-        <ul class="site-nav list">
-          <li><a href="./index.html" class="link">Studio</a></li>
-          <li><a href="./portfolio.html" class="link current">Portfolio</a></li>
-          <li><a href="" class="link">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul class="address list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="header container">
+        <nav class="site-nav">
+          <a href="./index.html" class="logo logo-header">
+            <span class="logo-accent">Web</span>Studio</a
+          >
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link current">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li class="item"><a href="" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="address">
+          <a href="mailto:info@devstudio.com" class="link">
+            info@devstudio.com</a
+          >
+          <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+        </address>
+      </div>
     </header>
     <main>
-      <section class="section">
+      <section class="section filter container">
         <h1 class="visually-hidden">Portfolio</h1>
         <ul class="filter-list list">
-          <li><button type="button" class="filter-btn">All</button></li>
-          <li><button type="button" class="filter-btn">Web Site</button></li>
-          <li><button type="button" class="filter-btn">App</button></li>
-          <li><button type="button" class="filter-btn">Design</button></li>
-          <li><button type="button" class="filter-btn">Marketing</button></li>
+          <li class="item">
+            <button type="button" class="filter-btn">All</button>
+          </li>
+          <li class="item">
+            <button type="button" class="filter-btn">Web Site</button>
+          </li>
+          <li class="item">
+            <button type="button" class="filter-btn">App</button>
+          </li>
+          <li class="item">
+            <button type="button" class="filter-btn">Design</button>
+          </li>
+          <li class="item">
+            <button type="button" class="filter-btn">Marketing</button>
+          </li>
         </ul>
         <ul class="portfolio-list list">
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-1.jpg"
               alt="Mobile App Screen."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Banking App Interface Concept</h2>
             <p class="card-descr">App</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-2.jpg"
               alt="The person puts the phone to the terminal."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Cashless Payment</h2>
             <p class="card-descr">Marketing</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-3.jpg"
               alt="Mobile application on the laptop and smartphone screen."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Meditaion App</h2>
             <p class="card-descr">App</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-4.jpg"
               alt="The person is holding onto the steering wheel of a car. View from the open driver's window."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Taxi Service</h2>
             <p class="card-descr">Marketing</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-5.jpg"
               alt="Smartphone screen with examples of background images on the right."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Screen Illustrations</h2>
             <p class="card-descr">Design</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-6.jpg"
               alt="On the street, a girl with headphones looks at the phone and smiles."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Online Courses</h2>
             <p class="card-descr">Marketing</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-7.jpg"
               alt="Examples of instagram story design."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Instagram Stories Concept</h2>
             <p class="card-descr">Design</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-8.jpg"
               alt="A girl walks down the street and carries a bag of vegetables."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Organic Food</h2>
             <p class="card-descr">Web Site</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/portfolio/project-card-9.jpg"
               alt="A man pours milk into a cup of coffee."
               width="360"
+              class="card-img"
             />
             <h2 class="card-title">Fresh Coffee</h2>
             <p class="card-descr">Web Site</p>
@@ -134,13 +157,15 @@
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="logo-footer logo">
-        <span class="logo-accent">Web</span>Studio</a
-      >
-      <p class="footer-descr">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+      <div class="footer-content container">
+        <a href="./index.html" class="logo-footer logo">
+          <span class="logo-accent">Web</span>Studio</a
+        >
+        <p class="footer-descr">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>

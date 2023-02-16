@@ -6,7 +6,6 @@
     --section-bckg-color: #F4F4FD;
     --filter-bckg-color: #E7E9FC;
     --primary-bckg-white-color: #FFFFFF;
-
 }
 
 body {
@@ -16,10 +15,49 @@ body {
     background-color: var(--primary-bckg-white-color);
     color: var(--primary-title-color);
 }
+h1, h2, h3, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container { 
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
 
 /* header */
+.header.container {
+    display: flex;
+    border-bottom: 1px solid #E7E9FC;
+}
+
 .logo {
+    display: inline-block;
+
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
@@ -30,26 +68,39 @@ body {
     color: var(--primary-title-color);
     cursor: pointer;
 }
-.logo-footer{
-    color: var(--section-bckg-color);
+.logo-header {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
-.logo-accent {
-    color: var(--accent-color);
+
+/* navigation */
+
+.site-nav .logo {
+    margin-right: 76px;
 }
-.list {
-    list-style-type: none;
+
+.site-nav{
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .item:not(:last-child),
+.address .link:not(:last-child) {
+    margin-right: 40px;
 }
 
 .site-nav .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-decoration: none;
     color: inherit;
-    cursor: pointer;
 }
 .site-nav .link.current {
     color: var(--accent-focus-color);
@@ -60,13 +111,24 @@ body {
 .site-nav .link:active {
     color: var(--accent-focus-color);
 }
+
+/* adress */
+
+.address {
+    display: flex;
+    margin-left: auto;
+}
+
 .address .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
     font-family: inherit;
     font-size: 16px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-decoration: none;
     color: var(--primary-text-color);
 }
 
@@ -76,21 +138,29 @@ body {
     color: var(--accent-focus-color);
 }
 
-
 /* hero */
+
 .hero {
     background-color: var(--primary-title-color);
+    text-align: center;
+    padding: 188px 0;
+    margin-bottom: 120px;
+
 }
 .hero-title {
+    margin-bottom: 48px;
+
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    text-align: center;
     color: var(--primary-bckg-white-color);
 }
 .hero-button {
+    padding: 16px 32px;
+
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -99,7 +169,9 @@ body {
     letter-spacing: 0.04em;
     color: var(--primary-bckg-white-color);
     background-color: var(--accent-color);
+    border-color: transparent;
     cursor: pointer;
+    border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -108,6 +180,7 @@ body {
 
 
 /* sections */
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -130,11 +203,30 @@ body {
     text-transform: capitalize;
     color: var(--primary-title-color);
 }
+
+.advantage-list .item:not(:last-child),
+.services-list .item:not(:last-child),
+.team-list .item:not(:last-child) {
+    margin-right: 24px;
+}
+
+/* section advantages */
+
+.section.advantages {
+    margin-bottom: 120px;
+}
 .advantage-list {
+    display: flex;
     text-align: left;
 }
+
+.advantage-list .item {
+    width: 264px;
+}
+
 .advantage-title,
 .team-title {
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -148,20 +240,70 @@ body {
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 }
-.team-list {
-    text-align: center;
+
+/* section what are we doing */
+
+.section.services {
+    margin-bottom: 120px;
 }
-.section.team {
+
+.services-list {
+    display: flex;
+    margin-top: 72px;
+}
+
+/* sectionour team */
+
+.section.our-team {
     background-color: var(--section-bckg-color);
 }
 
+.team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.team .section-title {
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    text-align: center;
+}
+
+.team-list .item {
+    padding-bottom: 32px;
+    background-color: var(--primary-bckg-white-color);
+    border-radius: 0px 0px 4px 4px;
+}
+.team-img {
+    margin-bottom: 32px;
+}
 
 /* footer */
 .footer{
-    text-align: left;
     background-color: var(--primary-title-color);
 }
+
+.logo-footer {
+    color: var(--section-bckg-color);
+    margin-bottom: 16px;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 .footer-descr {
+    width: 264px;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -170,8 +312,23 @@ body {
 
 
 /* portfolio page */
+.section.filter {
+   padding-bottom: 120px;
+   margin-top: 96px;
+}
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.filter-list .item:not(:last-child){
+    margin-right: 24px;
+}
 
 .filter-btn {
+    padding: 12px 24px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -181,12 +338,25 @@ body {
     color: var(--accent-color);
     background-color: var(--section-bckg-color);
     cursor: pointer;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
 }
 .filter-btn:hover,
 .filter-btn:focus,
 .filter-btn:active {
     color: var(--primary-bckg-white-color);
     background-color: var(--accent-focus-color);
+    border-color: transparent;
+}
+
+.portfolio-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-list .item {
+    background-color: var(--primary-bckg-white-color);
+    border: 1px solid #E7E9FC;
 }
 
 .card-title {
