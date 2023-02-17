@@ -16,42 +16,54 @@ body {
     color: var(--primary-title-color);
 }
 h1, h2, h3, p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 ul, ol {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
     padding-left: 0;
+    list-style: none;
 }
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.list {
-    list-style-type: none;
+address {
+    font-style: normal;
 }
 
-.link {
+a {
     text-decoration: none;
     cursor: pointer;
 }
 
-.container { 
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+button {
+    display: block;
+    cursor: pointer;
+    border-radius: 4px;
 }
 
+.container { 
+    align-items: center;
+    margin: 0 auto;
+    width: 1158px;
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 /* header */
-.header.container {
-    display: flex;
+.header {
     border-bottom: 1px solid #E7E9FC;
+}
+
+.header .container {
+    display: flex;
 }
 
 .logo {
@@ -63,7 +75,6 @@ img {
     line-height: 1.33;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    text-decoration: none;
     color: var(--primary-title-color);
     cursor: pointer;
 }
@@ -125,7 +136,6 @@ img {
 
     font-family: inherit;
     font-size: 16px;
-    font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
@@ -157,7 +167,8 @@ img {
 }
 .hero-button {
     padding: 16px 32px;
-
+    margin-left: auto;
+    margin-right: auto;
 
     font-family: inherit;
     font-weight: 500;
@@ -165,11 +176,9 @@ img {
     line-height: 1.5;
     text-transform: capitalize;
     letter-spacing: 0.04em;
+    border: none;
     color: var(--primary-bckg-white-color);
     background-color: var(--accent-color);
-    border-color: transparent;
-    cursor: pointer;
-    border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -209,11 +218,6 @@ img {
 }
 
 /* section advantages */
-
-.section.advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 .advantage-list {
     display: flex;
     text-align: left;
@@ -241,11 +245,6 @@ img {
 }
 
 /* section what are we doing */
-
-.section.services {
-    padding-bottom: 120px;
-}
-
 .services-list {
     display: flex;
     margin-top: 72px;
@@ -255,11 +254,6 @@ img {
 
 .section.our-team {
     background-color: var(--section-bckg-color);
-}
-
-.team {
-    padding-top: 120px;
-    padding-bottom: 120px;
 }
 
 .team .section-title {
@@ -292,9 +286,6 @@ img {
 }
 
 .footer-content{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     padding-top: 100px;
     padding-bottom: 100px;
 }
@@ -309,7 +300,6 @@ img {
 
 /* portfolio page */
 .section.filter {
-   padding-bottom: 120px;
    padding-top: 96px;
 }
 .filter-list {
@@ -333,9 +323,7 @@ img {
     letter-spacing: 0.04em;
     color: var(--accent-color);
     background-color: var(--section-bckg-color);
-    cursor: pointer;
     border: 1px solid #E7E9FC;
-    border-radius: 4px;
 }
 .filter-btn:hover,
 .filter-btn:focus,
@@ -367,7 +355,6 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
-    background-color: var(--primary-bckg-white-color);
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
     border-left: 1px solid #E7E9FC;
